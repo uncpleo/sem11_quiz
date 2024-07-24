@@ -1,0 +1,57 @@
+.contTemp {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 255, 245);
+    padding: 10px;
+    width: 25vh;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.questionDiv {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 20px;
+  width: 80%;
+  margin-left: auto; /* Alineación a la derecha */
+  margin-right: auto; /* Alineación a la derecha */
+}
+
+.questionDiv h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.questionDiv .question-options {
+  margin-top: 10px;
+}
+
+.questionDiv label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+
+.questionDiv input[type="radio"] + label::before {
+  content: '';
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 8px;
+}
+
+.questionDiv input[type="radio"]:checked + label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.questionDiv label span {
+  vertical-align: middle;
+}
